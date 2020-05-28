@@ -20,6 +20,9 @@ require 'poise_python/python_providers/dummy'
 require 'poise_python/python_providers/msi'
 require 'poise_python/python_providers/portable_pypy'
 require 'poise_python/python_providers/portable_pypy3'
+require 'poise_python/python_providers/pypy'
+require 'poise_python/python_providers/pypy3'
+
 require 'poise_python/python_providers/scl'
 require 'poise_python/python_providers/system'
 
@@ -36,6 +39,8 @@ module PoisePython
       PoisePython::PythonProviders::Msi,
       PoisePython::PythonProviders::PortablePyPy3,
       PoisePython::PythonProviders::PortablePyPy,
+      PoisePython::PythonProviders::PyPy3,
+      PoisePython::PythonProviders::PyPy,
       PoisePython::PythonProviders::Scl,
       PoisePython::PythonProviders::System,
     ])
