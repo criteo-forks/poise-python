@@ -34,6 +34,7 @@ module PoisePython
           version: new_resource.version,
           virtualenv_version: new_resource.virtualenv_version,
           wheel_version: new_resource.wheel_version,
+          checksum: new_resource.checksum,
         })
       end
 

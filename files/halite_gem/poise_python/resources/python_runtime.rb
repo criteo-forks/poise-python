@@ -46,6 +46,12 @@ module PoisePython
         #   @example Install Python 2.7
         #     python_runtime '2.7'
         attribute(:version, kind_of: String, name_attribute: true)
+        # @!attribute checksum
+        #   Checksum for the install version, is not required.
+        #   @note Disabling the pip install may result in other resources being
+        #   @return [String]
+        attribute(:checksum, kind_of: [String, NilClass])
+
         # @!attribute get_pip_url
         #   URL to download the get-pip.py script from. If not sure, the default
         #   of https://bootstrap.pypa.io/get-pip.py is used. If you want to skip
