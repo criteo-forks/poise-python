@@ -29,7 +29,8 @@ module PoisePython
         # Don't put prereleases first so they aren't used for prefix matches on ''.
         versions: %w{3.6-7.2.0},
         machines: %w{linux-x86_64},
-        url: 'https://github.com/squeaky-pl/portable-pypy/releases/download/pypy%{version}/pypy%{version}-%{kernel}_%{machine}-portable.tar.bz2'
+        url: 'https://github.com/squeaky-pl/portable-pypy/releases/download/pypy%{version}/pypy%{version}-%{kernel}_%{machine}-portable.tar.bz2',
+        checksum: '%{checksum}',
       )
 
       def python_binary
